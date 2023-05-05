@@ -36,6 +36,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     // marginBottom: 10,
     marginTop: 25,
+    // marginRight: 10,
     // width: 100,
   },
   button: {
@@ -45,16 +46,17 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 30,
     padding: 8,
-    marginLeft: 8,
+    // marginLeft: 8,
   },
   buttonGroup: {
     display: "flex",
     flexDirection: "row",
+    gap: 10,
     // flex: 1,
   },
   headerContainer: {
-    // marginHorizontal: 10,
-    marginLeft: 12,
+    marginHorizontal: 20,
+    // marginLeft: 12,
     // marginRight: 10,
     // marginVertical: 20,
   },

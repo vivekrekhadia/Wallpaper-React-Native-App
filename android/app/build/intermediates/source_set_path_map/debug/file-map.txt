@@ -32,4 +32,5 @@ com.awesomeproject.app-debug-30 /home/appgambit/Tpractice/Wallpaper-React-Native
 com.awesomeproject.app-main-31 /home/appgambit/Tpractice/Wallpaper-React-Native-App/android/app/src/main/res
 com.awesomeproject.app-packaged_res-32 /home/appgambit/Tpractice/Wallpaper-React-Native-App/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
 com.awesomeproject.app-packaged_res-33 /home/appgambit/Tpractice/Wallpaper-React-Native-App/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
-com.awesomeproject.app-packaged_res-34 /home/appgambit/Tpractice/Wallpaper-React-Native-App/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug
+com.awesomeproject.app-packaged_res-34 /home/appgambit/Tpractice/Wallpaper-React-Native-App/node_modules/react-native-ui-lib/lib/android/build/intermediates/packaged_res/debug
+com.awesomeproject.app-packaged_res-35 /home/appgambit/Tpractice/Wallpaper-React-Native-App/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug

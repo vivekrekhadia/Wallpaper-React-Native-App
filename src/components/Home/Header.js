@@ -1,8 +1,13 @@
-import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import React, { useRef } from "react";
+import { Modal, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./Styles";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-const Header = ({ handleOpenBottomSheet }) => {
+import ModalComp from "../Modal";
+const Header = ({
+  handleOpenBottomSheet,
+  isBottomSheetOpen,
+  handleCloseBottomSheet,
+}) => {
   return (
     <View style={styles.headerContainer}>
       <View style={styles.header}>
@@ -18,14 +23,21 @@ const Header = ({ handleOpenBottomSheet }) => {
           </TouchableOpacity>
         </View>
         {/* <Text></Text> */}
-        <Icon.Button
-          name="swap-vertical-circle"
-          size={35}
-          color="#FF8976"
-          backgroundColor="#fff"
-          onPress={handleOpenBottomSheet}
-          // iconStyle={{ margin: 0, padding: 0 }}
-        />
+        <View>
+          <Icon
+            name="swap-vertical-circle"
+            size={35}
+            color="#FF8976"
+            backgroundColor="#fff"
+            onPress={handleOpenBottomSheet}
+            // style={{ marginRight: 0 }}
+            // iconStyle={{ margin: 0, padding: 0 }}
+          />
+        </View>
+        {/* <ModalComp
+          isBottomSheetOpen={isBottomSheetOpen}
+          handleCloseBottomSheet={handleCloseBottomSheet}
+        /> */}
       </View>
     </View>
   );

@@ -789,6 +789,9 @@ color cardview_shadow_start_color
 color catalyst_logbox_background
 color catalyst_redbox_background
 color checkbox_themeable_attribute_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -831,6 +834,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color dividerColor
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -912,6 +916,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color numberPickerDivider
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -934,6 +939,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color title
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -1611,6 +1617,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numberPicker
 id off
 id on
 id outline
@@ -1868,6 +1875,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout wheel_picker
 menu example_menu
 menu example_menu2
 mipmap ic_launcher
@@ -2248,6 +2256,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style NumberPickerTextColorStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
