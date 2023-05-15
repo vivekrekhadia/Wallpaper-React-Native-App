@@ -12,6 +12,7 @@ import React, { useMemo, useRef, useState } from "react";
 import ImageList from "./ImageList";
 import Header from "./Header";
 import ModalComp from "../Modal";
+import ImageModalComp from "../ImageModalComp";
 // import { styles } from "./Styles";
 
 // import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
@@ -22,6 +23,7 @@ const Home = (props) => {
   // This state would determine if the drawer sheet is visible or not
   const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(false);
 
+  const [isImageModal, setIsImageModal] = useState(false);
   // Function to open the bottom sheet
   const handleOpenBottomSheet = () => {
     setIsBottomSheetOpen(true);
@@ -30,6 +32,16 @@ const Home = (props) => {
   // Function to close the bottom sheet
   const handleCloseBottomSheet = () => {
     setIsBottomSheetOpen(false);
+  };
+
+  // Function to open the Image Modal
+  const handleOpenImageModal = () => {
+    setIsImageModal(true);
+  };
+
+  // Function to close the Ima
+  const handleCloseImageModal = () => {
+    setIsImageModal(false);
   };
 
   return (
@@ -41,10 +53,14 @@ const Home = (props) => {
           isBottomSheetOpen={isBottomSheetOpen}
           handleCloseBottomSheet={handleCloseBottomSheet}
         />
-        <ImageList />
+        <ImageList handleOpenImageModal={handleOpenImageModal} />
         <ModalComp
           isBottomSheetOpen={isBottomSheetOpen}
           handleCloseBottomSheet={handleCloseBottomSheet}
+        />
+        <ImageModalComp
+          isImageModal={isImageModal}
+          handleCloseImageModal={handleCloseImageModal}
         />
       </SafeAreaView>
     </>

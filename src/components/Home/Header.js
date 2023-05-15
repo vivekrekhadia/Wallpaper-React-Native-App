@@ -23,17 +23,17 @@ const Header = ({
           </TouchableOpacity>
         </View>
         {/* <Text></Text> */}
-        <View>
+        <TouchableOpacity onPress={handleOpenBottomSheet}>
           <Icon
             name="swap-vertical-circle"
             size={35}
             color="#FF8976"
             backgroundColor="#fff"
-            onPress={handleOpenBottomSheet}
+
             // style={{ marginRight: 0 }}
             // iconStyle={{ margin: 0, padding: 0 }}
           />
-        </View>
+        </TouchableOpacity>
         {/* <ModalComp
           isBottomSheetOpen={isBottomSheetOpen}
           handleCloseBottomSheet={handleCloseBottomSheet}

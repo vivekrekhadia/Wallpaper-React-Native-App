@@ -1,5 +1,12 @@
 import React from "react";
-import { View, FlatList, Image, StyleSheet, Text } from "react-native";
+import {
+  View,
+  FlatList,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import img0 from "../../assets/IMG_0390.jpg";
 import img1 from "../../assets/IMG_0391.jpg";
 
@@ -55,16 +62,19 @@ const DATA = [
   },
 ];
 
-const ImageList = () => {
+const ImageList = ({ handleOpenImageModal }) => {
   const renderItem = ({ item, i }) => (
     <View style={styles.imageContainer}>
       {/* <Text style={{ color: "#000", height: 100, width: 100 }}>{item.id}</Text> */}
-      <Image source={item.imageUri} style={styles.image} />
+      <View onPress={handleOpenImageModal}>
+        <Image source={item.imageUri} style={styles.image} />
+      </View>
     </View>
   );
 
   return (
     <FlatList
+      showsVerticalScrollIndicator={false}
       data={DATA}
       renderItem={renderItem}
       keyExtractor={(item) => item.id}
